@@ -12,17 +12,17 @@ class Dog extends Animal {
     }
 }
 
-class Cat extends Animal {
-    void meow() {
-        System.out.println("meowing...");
+class BabyDog extends Dog {
+    void weep() {
+        System.out.println("weeping...");
     }
 }
 
 class TestInheritance2 {
     public static void main(String args[]) {
-        Cat c = new Cat();
-        c.meow();
-        c.eat();
-        // c.bark(); // compile error
+        BabyDog d = new BabyDog();
+        d.weep();
+        d.bark();
+        d.eat();
     }
 }
